@@ -2,82 +2,133 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Google Clone</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="shortcut icon" href="https://i.ibb.co/KLpGFNv/googleicon.png" type="image/png">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/laptop.css" media="(min-width: 768px)">
+        <title>Google Clone</title>
     </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="nav-section">
-                    <li>
-                        <a href="">Gmail</a>
-                    </li>
-                    <li>
-                        <a href="">Imágenes</a>
-                    </li>
-                    <li class="menu-icon">
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="https://i.ibb.co/0c00HMX/avatar.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+    <body class="body">
+        <header class="header">
+            <section class="header__menu-btn flex-center">
+                <button id="menu-btn"></button>
+            </section>
+            <section class="header__search-btns">
+                <div class="flex-center">
+                    <button>TODOS</button>
+                </div>
+                <div class="flex-center">
+                    <button>IMÁGENES</button>
+                </div>
+            </section>
+            <section class="header__links-laptop">
+                <a href="">Gmail</a>
+                <a href="">Imágenes</a>
+            </section>
+            <section class="header__others-btns flex-center">
+                <button aria-label="Google Apps" data-title="Google Apps" id="apps-btn"></button>
+                <button id="login-btn">Acceder</button>
+            </section>
         </header>
-        <main>
-            <section class="main-logo">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+        <div class="menu-background"></div>
+        <aside class="menu">
+            <figure class="menu__logo">
+                <img src="assets/img/google_logo.png" alt="Google logo">
+            </figure>
+            <section class="menu__section-one">
+                <a href="#">
+                    <div>
+                        <span class="span-1"></span>
+                        <p>Página principal</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/history/optout">
+                    <div>
+                        <span class="span-2"></span>
+                        <p>Historial de búsqueda</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/save">
+                    <div>
+                        <span class="span-3"></span>
+                        <p>Colecciones</p>
+                    </div>
+                </a>
             </section>
-            <section class="main-input">
-                <div class="main-input-container">
-                    <span class="search-icon">
-                    </span>
-                    <input type="text">
-                    <a class="micro-icon" href=""></a>
+            <section class="menu__section-two">
+                <a href="https://www.google.com/preferences">
+                    <div>
+                        <span class="span-4"></span>
+                        <p>Configuración</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/history/privacyadvisor">
+                    <div>
+                        <span class="span-5"></span>
+                        <p>Tus datos en la Búsqueda</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/safesearch">
+                    <div>
+                        <span class="span-6"></span>
+                        <p>Ocultar resultados explícitos: desactivado</p>
+                    </div>
+                </a>
+                <a href="https://www.google.com/search/howsearchworks/">
+                    <div>
+                        <span class="span-7"></span>
+                        <p>Cómo funciona la Búsqueda</p>
+                    </div>
+                </a>
+                <a href="https://support.google.com/websearch/">
+                    <div>
+                        <span class="span-8"></span>
+                        <p>Ayuda</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <span class="span-9"></span>
+                        <p>Enviar comentarios</p>
+                    </div>
+                </a>
+            </section>
+        </aside>
+        <main class="main">
+            <section class="main__logo">
+                <figure>
+                    <img src="assets/img/google_logo.png" alt="Google Logo">
+                </figure>
+            </section>
+            <section class="main__input flex-center">
+                <div class="main__input--wrapper">
+                    <button id="search-btn"></button>
+                    <input id="search-input" type="text">
+                    <button id="voice-btn"></button>
                 </div>
             </section>
-            <section class="main-buttons">
-                <div>
-                    <button>Buscar con Google</button>
-                </div>
-                <div>
-                    <button>Me siento con suerte</button>
-                </div>
+            <section class="main__buttons flex-center">
+                <button>Buscar con Google</button>
+                <button>Me siento con suerte</button>
             </section>
         </main>
-        <section class="extra">
-            <a href="">México</a>
-        </section>
-        <footer>
-            <ul class="footer-left">
-                <li>
-                    <a href="">Publicidad</a>
-                </li>
-                <li>
-                    <a href="">Negocios</a>
-                </li>
-                <li>
-                    <a href="">Sobre Google</a>
-                </li>
-                <li>
-                    <a href="">Cómo funciona la Búsqueda</a>
-                </li>
-            </ul>
-            <ul class="footer-right">
-                <li>
-                    <a href="">Privacidad</a>
-                </li>
-                <li>
-                    <a href="">Condiciones</a>
-                </li>
-                <li>
-                    <a href="">Preferencias</a>
-                </li>
-            </ul>
+        <footer class="footer">
+            <section class="footer__country">
+                <p>México</p>
+            </section>
+            <section class="footer__info">
+                <a href="https://about.google/" target="_blank">Sobre Google</a>
+                <a href="https://ads.google.com/intl/es_MX/home/" target="_blank">Publicidad</a>
+                <a href="https://smallbusiness.withgoogle.com/" target="_blank">Negocios</a>
+                <a href="https://www.google.com/search/howsearchworks" target="_blank">Cómo funciona la Búsqueda</a>
+                <a href="https://policies.google.com/privacy" target="_blank">Privacidad</a>
+                <a href="https://policies.google.com/terms" target="_blank">Condiciones</a>
+                <a href="#">Preferencias</a>
+            </section>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>
